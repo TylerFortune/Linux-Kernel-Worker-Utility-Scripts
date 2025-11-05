@@ -1,0 +1,11 @@
+#!/bin/sh
+#Tyler Fortune - Homework 4 - Prof. Nwanze - Oct 30th
+
+# This script lists and sorts kworker processes by PID (largest to smallest)
+# The 'sort -k 1 -n -r' sorts the list:
+# -k 1: sorts the first column (PID)
+# -n: Treats the sort keys as numbers
+# -r: sorts in reverse order (largest to smallest)
+ps ax | grep "kworker" | sort -k 1 -n -r
+
+

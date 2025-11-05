@@ -1,0 +1,14 @@
+#!/bin/sh
+#Tyler Fortune - Homework 4 - Prof. Nwanze - Oct 30th
+
+echo "The number of kworker processes is:"
+ps ax | grep "kworker" | wc -l # This lists processes, filters for kworker, and counts the lines, all without creating files.
+
+#echo "\nBelow is the original assignment using files to display the amount of kworkers\n"
+# This is my script to count kworker processes (kernel process threads) running
+#echo "Welcome to my kworker shell script\n"                  # Welcome message
+#echo "The number of kworker processes is: "                  # Display message
+#ps ax > processestempfile.tmp                                # ps ax lists all the processes running, and '>' redicrects the output into a temporary file 'processestempfile'
+#grep "kworker" processestempfile.tmp  > kworkertempfile.tmp  # The "grep" command searches for all kworker (kernel process threads) and '>' redicrects the output into a temporary file 'kworkertempfile'
+#wc -l < kworkertempfile.tmp                                  # "wc -l" counts the numbers of lines in kworkertempfile to 'count' the number of kworker processes
+#rm kworkertempfile.tmp processestempfile.tmp                 # "rm" deletes the temporary files kworkertempfile and processestempfile
