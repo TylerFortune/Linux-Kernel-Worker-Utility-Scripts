@@ -1,5 +1,7 @@
 # 🐧 Linux Kernel Process Utilities (kworker)
 
+![Complexity Level](https://img.shields.io/badge/Complexity-Level%20200-basic)
+
 A collection of efficient Bash shell scripts designed to monitor and report on **kworker** processes. These threads are essential components of the Linux kernel, responsible for handling background tasks and work queues.
 
 ---
